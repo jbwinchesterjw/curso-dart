@@ -1,5 +1,14 @@
 import 'dart:math';
 
+/**
+ * Crie uma lista de valores inteiros. Essa lista deve ser populada utilizando somente números aleatórios.
+    Após popular essa lista, escreva uma função que retorne o terceiro menor número dessa lista.
+    Ex:
+    [7, 12, 14, 3, 22, 9]
+    o menor número dessa lista é 3
+    o segundo menor número dessa lista é 7
+    o terceiro menor número dessa lista é 9, que é o resultado esperado.
+ */
 List<int> generateRandomList(int tamanho, int min, int max) {
   Random random = Random();
   List<int> lista = [];

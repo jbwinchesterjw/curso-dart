@@ -1,5 +1,9 @@
 import 'package:test/expect.dart';
 
+/**
+ * Vamos criar um sistema de cálculo de notas? A aplicação deve armazenar uma quantidade N de notas e
+    calcular a média a qual o aluno chegou. A nota para passar de ano é 7.
+ */
 void main(List<String> arguments) {
   List<double> notas = [10.0, 9.0, 8.0, 6.5];
   double media = 0.0;
