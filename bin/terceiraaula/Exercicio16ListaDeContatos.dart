@@ -1,3 +1,5 @@
+import 'package:test/expect.dart';
+
 void main() {
   /**
    * Vamos criar uma lista de contatos. Todos os contatos serão armazenados dentro de uma lista de maps,
