@@ -53,7 +53,7 @@ void addTarefa(List<Tarefa> listaTarefas) {
 
 void concluirTarefa(List<Tarefa> listaTarefas) {
   print('Digite o número da tarefa que deseja concluir:');
-  int numeroTarefa = int.tryParse(stdin.readLineSync() ?? '');
+  int? numeroTarefa = int.tryParse(stdin.readLineSync() ?? '');
 
   if (numeroTarefa != null && numeroTarefa >= 0 && numeroTarefa < listaTarefas.length) {
     listaTarefas[numeroTarefa].concluida = true;
