@@ -12,7 +12,7 @@ Map<String, int> contarVogais(String texto) {
   for (int i = 0; i < texto.length; i++) {
     String caractere = texto[i].toUpperCase();
     if (vogais.contains(caractere)) {
-      resultado[caractere] ++;
+      //resultado[caractere]! ++;
     }
   }
 
