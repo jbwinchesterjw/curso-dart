@@ -1,4 +1,4 @@
-class Animal{
+abstract class Animal{
   String? nome;
   int? idade;
 
@@ -8,6 +8,8 @@ class Animal{
   void dormir(){
     print("Dormiu");
   }
+
+  void rotinaDiaADia();
 
   Animal(this.nome, this.idade);
 
@@ -41,6 +43,11 @@ class Cachorro extends Animal{
     print("Dorme roncando!");
   }
 
+  @override
+  void rotinaDiaADia() {
+    // TODO: implement rotinaDiaADia
+  }
+
   // @override
   // String toString(){
   //   return 'Cachorro - Nome: $nome Idade: $idade';
@@ -69,6 +76,11 @@ class Gato extends Animal{
     OBS: usar somente quando se tem certeza do que será retornando!
    */
   Cachorro animal1 = funcao() as Cachorro;
+
+  @override
+  void rotinaDiaADia() {
+    // TODO: implement rotinaDiaADia
+  }
 
   // @override
   // String toString(){
