@@ -63,10 +63,21 @@ class Gato extends Animal{
     print("Dorme calmo!");
   }
 
+  /*O operador as é usado para realizar um cast de um objeto para um tipo específico.
+    Ele verifica se o objeto é do tipo esperado em tempo de execução e, se for,
+    retorna uma referência desse tipo. Caso contrário, gera uma exceção CastError.
+    OBS: usar somente quando se tem certeza do que será retornando!
+   */
+  Cachorro animal1 = funcao() as Cachorro;
+
   // @override
   // String toString(){
   //   return 'Gato - Nome: $nome Idade: $idade';
   // }
+}
+
+Animal funcao(){
+  return Cachorro('jack', 7);
 }
 
 void main(){
